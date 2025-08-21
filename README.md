@@ -1,4 +1,9 @@
 In today’s data-driven world, real-time insights are important especially in fast-moving markets like cryptocurrency. I recently completed an exciting project where I designed and deployed an end-to-end ETL streaming pipeline to fetch live crypto data from the CoinRanking API and visualize it in Power BI, all built on Microsoft Azure.
+
+SUMMARY
+A real-time ETL pipeline ingests cryptocurrency data from the Coinranking API using an Azure Function (Python), triggered every 1 minute. The data is streamed into Azure Event Hub, which connects to Microsoft Fabric. Within Fabric, the data flows into Event Stream for processing and is stored in Event House (Kusto DB). Data Activator sends alerts via Outlook, while Azure Key Vault securely stores credentials. Finally, the data is visualized in Power BI.
+
+
 The Problem 
 Crypto prices fluctuate by the second. Static reports and batch processing can’t keep up. Hence, the reason for the project to:
 •	Automate data ingestion from a third-party API
@@ -45,3 +50,7 @@ ________________________________________
 
 📈 Final Thoughts
 This project demonstrates the power of combining serverless computing, secure access management, and real-time analytics into one seamless solution. If you're looking to modernize your data pipelines or bring streaming analytics into your organization, Azure has the tools to make it happen.
+<img width="890" height="359" alt="image" src="https://github.com/user-attachments/assets/957327d0-bb09-468a-b233-07f91ec58f4d" />
+
+
+
